@@ -1,6 +1,6 @@
 /** @param {NS} ns */
 export async function main(ns) {
-  var neigbor = ns.scan(ns.get.Hostname);
+  var neigbor = ns.scan(ns.getHostname());
   var numberOfNeigbors = neigbor.length;
   for (let i = 0; i < numberOfNeigbors; i++) {
     ns.nuke(neigbor[i]);
